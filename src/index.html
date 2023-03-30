@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <title>Game-Hub</title>
+  </head>
+  <style>
+    h1.heading {
+      font-size: xx-large;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="flex flex-row px-3 py-3 gap-x-2">
+        <div class="logo">
+          <img
+            src="../Images/logo-ff4914e6.webp"
+            class="w-16"
+            alt="Game-Hub logo"
+          />
+        </div>
+        <div
+          class="border-x border-y rounded-l-3xl rounded-r-3xl px-2 py-2 w-10/12 h-10 hover:bg-gray-600 bg-gray-400 mt-3"
+        >
+          <div class="flex flex-row gap-x-2">
+            <img
+              src="../Images/search-interface-symbol.png"
+              class="w-4"
+              alt=""
+            />
+            <p>Search games...</p>
+          </div>
+        </div>
+        <div class="flex flex-row gap-x-2">
+          <img src="../Images/night-mode.png" class="" alt="dark-mode" />
+          <p>Dark Mode</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="grid grid-cols-10 mt-5 px-4">
+        <div class="col-span-2">
+          <div class="flex flex-col gap-y-4">
+            <h1 class="heading">Genres</h1>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <a href="#Action"><p class="mt-2 hover:underline">Action</p></a>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Indie</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Adevnture</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">RPG</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Strategy</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Shooter</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Casual</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Simulation</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Puzzle</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Arcade</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Platformer</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Racing</p>
+            </div>
+            <div class="flex flex-row gap-x-2">
+              <img
+                src="../Images/cedbb-15534102082658-800.avif"
+                class="h-8 w-8 rounded-lg object-cover"
+                alt=""
+              />
+              <p class="mt-2 hover:underline">Educational</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-8">
+          <div class="flex flex-col gap-y-4">
+            <h1 class="heading">Games</h1>
+            <div class="flex flex-row gap-x-4">
+              <button
+                id="dropdownDefaultButton"
+                data-dropdown-toggle="dropdown"
+                class="text-black bg-gray-400 hover:bg-gary-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button"
+              >
+                Platforms
+                <svg
+                  class="w-4 h-4 ml-2"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Xbox</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Android</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >IOS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Linux</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Apple Macntosh</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Playstation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >PC</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Nintendo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >3DO</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Atari</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Neo Geo</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                id="dropdownHoverButton"
+                data-dropdown-toggle="dropdownHover"
+                data-dropdown-trigger="hover"
+                class="text-black bg-gray-400 hover:bg-gray-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button"
+              >
+                Order by:
+                <svg
+                  class="w-4 h-4 ml-2"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownHover"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdownHoverButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Date added</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Relevance</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Release date</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Popularity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Name</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
+                      >Average Rating</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-4 gap-3 mt-4">
+            <div class="col-span-1 mb-3">
+              <div class="shadow-xl p-2">
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 mb-3">
+              <div
+                class="rounded-md border-x border-y border-white shadow-xl p-2"
+              >
+                <div class="flex flex-col gap-y-3">
+                  <div class="img">
+                    <img
+                      src="../Images/Game1.jpg"
+                      class="rounded-t-md"
+                      alt="GTA"
+                    />
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex flex-row gap-x-1">
+                      <img
+                        src="../Images/windows-platform-logo.png"
+                        class="w-4 h-4"
+                        alt="PC"
+                      />
+                      <img
+                        src="../Images/nintendo.png"
+                        class="w-4 h-4"
+                        alt="Nintendo"
+                      />
+                      <img
+                        src="../Images/playstation.png"
+                        class="w-4 h-4"
+                        alt="playstation"
+                      />
+                      <img
+                        src="../Images/xbox.png"
+                        class="w-4 h-4"
+                        alt="Xbox"
+                      />
+                    </div>
+                    <div
+                      class="rounded-md border-x border-y p-1 bg-green-600 w-8 h-8"
+                    >
+                      <span class="text-white">92</span>
+                    </div>
+                  </div>
+                  <h2 class="text-xl font-bold">Grand Theft Auto V</h2>
+                  <img
+                    src="../Images/bulls-eye-d37f7fe5.webp"
+                    class="w-4 h-4"
+                    alt="bulls-eye"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
